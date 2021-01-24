@@ -1735,3 +1735,20 @@ footer p a:hover {
 .center {
   opacity: 0.73;
 }
+
+/* On force à ne pas proposer l'affichage Desktop... */
+a.ask-for-display-desktop {
+ display: none;
+}
+@media (max-width: 1023px) {
+ /* ...sauf si le site est en RWD et est... */
+ /* ...en version inférieur à la version maximale */
+ .rwd a.ask-for-display-desktop {
+     display: inline;
+ }
+}
+/* Par défaut la demande de passer en version RWD est là... */
+/* ...et si on est déjà en RWD on ne l'affiche pas */
+.rwd a.ask-for-display-responsive {
+ display: none;
+}
