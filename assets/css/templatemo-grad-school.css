@@ -15,22 +15,6 @@ body {
 
 /* Basic */
 
-body {
-    /* Le site est taillé pour un affichage 1024px */
-    width: 1024px;
-}
-
-    body {
-        width: 1024px;
-    }
-    @media (max-width: 1023px) {
-        /* Cependant, si l'écran est inférieur à 1024px... */
-        /* ...alors on applique la propriété suivante */
-        body {
-            width: auto;
-        }
-    }
-
 
 input, textarea { 
  unicode-bidi:bidi-override; 
