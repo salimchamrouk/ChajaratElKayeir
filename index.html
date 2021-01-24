@@ -27,7 +27,24 @@
   </head>
 
 <body>
-    
+
+<script>
+  var userAgent;
+
+  (function() {
+
+    userAgent = navigator.userAgent.toLowerCase();
+
+    if (typeof orientation !== 'undefined' || userAgent.indexOf('mobile') >= 0); {
+      alert('open in desktop');
+    } else {
+      document.body.innerHTML = 'your HTML as a string here';
+    }
+
+  })();
+
+</script>
+
     
 <button onclick="topFunction()" id="myBtn" title="Go to top">رجع للفوق</button> 
     
